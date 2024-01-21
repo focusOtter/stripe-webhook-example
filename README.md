@@ -1,4 +1,5 @@
 # AWS CDK Stripe Webhook Lambda
+![image](https://github.com/focusOtter/stripe-webhook-example/assets/5106417/0a803461-e8be-4493-9248-14620a3a4fe4)
 
 ## Description
 
@@ -18,7 +19,10 @@ Before deploying this application, ensure that:
 
 1. **Stripe Secrets in AWS Secrets Manager**: A secret named `STRIPE_TEST_CREDENTIALS_WITH_WEBHOOK` is pre-stored in AWS Secrets Manager. This secret should be an object containing:
    - `STRIPE_SECRET_KEY`: Your Stripe test secret key.
-   - `STRIPE_SECRET_WEBHOOK`: Stripe webhook secret obtained after configuring the Lambda function URL in the Stripe developer dashboard.
+   - `STRIPE_SECRET_WEBHOOK`: Stripe webhook secret obtained after configuring the Lambda function URL in the Stripe developer dashboard (You won't have this until after you deploy, but can update the value then.)
+  
+<img width="1381" alt="image" src="https://github.com/focusOtter/stripe-webhook-example/assets/5106417/45a251a1-8213-4258-8849-90450ced2533">
+
 
 ## Setup and Deployment
 
@@ -45,6 +49,8 @@ Before deploying this application, ensure that:
 ## Testing
 
 Once deployed, the Lambda function will log event data to AWS CloudWatch, particularly focusing on `checkout.session.completed` events, allowing you to monitor and debug the Stripe webhook interactions.
+<img width="828" alt="image" src="https://github.com/focusOtter/stripe-webhook-example/assets/5106417/d10e9ff6-8fb8-4a17-a4e4-a51093bdf11c">
+
 
 ## License
 
