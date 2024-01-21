@@ -24,7 +24,7 @@ Before deploying this application, ensure that:
 
 1. **Clone the Repository**:
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/focusOtter/stripe-webhook-example.git
    ```
 2. **Install Dependencies**:
    Navigate to the cloned directory and run:
